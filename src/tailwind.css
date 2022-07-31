@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page_content{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    @apply  max-w-7xl;
+}
+@media screen and (max-width:768px) {
+    .page_content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+p{
+    @apply text-desc md:text-lg sm:text-base text-sm;
+}
+.universal_btn{
+    @apply inline-flex md:text-lg text-base bg-btn-bg xl:py-3 xl:px-9 lg:py-2 lg:px-6 px-3 py-1 font-bold text-btn-text rounded-full hover:bg-logo transition;
+}
+.site_header{
+    @apply 2xl:pt-24 xl:pt-16 md:pt-9 sm:pt-6 py-3 md:pb-8 sm:pb-4;
+}
+.responsive_navbar{
+    @apply md:flex md:space-x-5 md:text-center items-center md:w-auto w-64 md:relative fixed top-0 left-0 bottom-0 md:bg-transparent bg-btn-bg text-white;
+}
+.nav_link{
+    @apply font-medium block md:p-0 px-4 py-2 md:hover:text-logo md:text-black text-white hover:bg-logo hover:text-btn-bg md:hover:bg-transparent transition;
+}
+.main_content{
+    background-image: url('banner_starts.png'),url('banner_bottom_bg.png');
+    @apply  bg-bottom bg-no-repeat;
+}
+.breadcrumb{
+    @apply w-full h-64 flex justify-center items-center space-x-2;
+}
+.banner_title{
+    @apply xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold text-title md:pt-8 sm:pt-5 pt-2 leading-tight;
+}
+.banner_badge{
+    @apply bg-own-grey flex space-x-3 items-center overflow-hidden rounded-2xl pr-12;
+}
+.banner_icon{
+    @apply bg-logo md:h-10 sm:h-6 md:w-10 sm:w-6 flex items-center justify-center rounded-full text-white;
+}
+.universal_title{
+    @apply font-semibold xl:text-5xl md:text-4xl sm:text-3xl text-2xl text-title md:mb-5 sm:mb-4 mb-3;
+}
+.overlay_btn{
+    content: '';
+    @apply block absolute top-0 left-0 bottom-0 w-6/12 bg-btn-bg rounded-full z-0 transition;
+}
+#monthly:checked ~ .overlay_btn{
+    @apply translate-x-0;
+}
+#year:checked ~ .overlay_btn{
+    @apply translate-x-full;
+}
+#monthly:checked ~ label[for="monthly"]{
+    @apply text-white;
+}
+#year:checked ~ label[for="year"]{
+    @apply text-white;
+}
+.client_slider .slick-arrow:before{
+    display: none;
+}
+.client_slider .slick-arrow{
+    @apply z-10;
+}
+.client_slider .slick-arrow i{
+    @apply bg-white text-slate-200 border border-slate-200 rounded-full text-xl h-8 w-8 hover:bg-blue-100 hover:text-blue-700 transition !important;
+}
+.client_slider .slick-next{
+    @apply right-4;
+}
+.client_slider .slick-prev{
+    left: unset !important;
+    @apply right-14;
+}
+footer .nav_link{
+    @apply text-white hover:text-logo !important;
+}

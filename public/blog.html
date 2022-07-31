@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>App Lab - Blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="font-body">
+    <header class="site_header">
+        <div class="page_content">
+            <div class="flex justify-between items-center">
+                <div class="w-1/5">
+                    <a href="./index.html">
+                        <h1 class="font-bold text-3xl"><span class="text-logo">App</span>Lab</h1>
+                    </a>
+                </div>
+                <div class="w-3/5">
+                    <nav class="flex justify-end sm:space-x-8 space-x-3">
+                        <ul class="responsive_navbar md:translate-x-0 -translate-x-64 transition">
+                            <li class="nav_link"><a href="./about.html">About</a></li>
+                            <li class="nav_link"><a href="./blog.html">Blog</a></li>
+                            <li class="nav_link"><a href="./service.html">Service</a></li>
+                            <li class="nav_link"><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                        <div>
+                            <a href="./contact.html" class="universal_btn whitespace-pre">Contact</a>
+                        </div>
+                        <div
+                            class="toggle bg-btn-bg text-white universal_btn flex justify-center items-center md:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_content">
+            <div class="breadcrumb">
+                <a href="./index.html" class="text-lg hover:text-logo transition border-b-2 border-logo">Home</a>
+                <span>&#10095;</span>
+                <h1 class="font-bold inline-block text-white text-3xl"><span class="text-logo">Blog</h1>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="py-10 md:py-8 sm:py-4 text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap w-full mb-20">
+                    <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Read About App Lab</h1>
+                        <div class="h-1 w-20 bg-btn-bg rounded"></div>
+                    </div>
+                    <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon
+                        brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't
+                        heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac
+                        humblebrag.</p>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                src="assets/games.jpg" alt="content">
+                            <h3 class="tracking-widest text-btn-bg text-xs font-medium title-font">Mix</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Different Games</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                                Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                src="assets/shooting.jpg" alt="content">
+                            <h3 class="tracking-widest text-btn-bg text-xs font-medium title-font">Shooting</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Super Power Shooting</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                                Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                src="assets/gaming.jpg" alt="content">
+                            <h3 class="tracking-widest text-btn-bg text-xs font-medium title-font">Games</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Gaming Enviroment</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                                Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                src="assets/arcade.jpg" alt="content">
+                            <h3 class="tracking-widest text-btn-bg text-xs font-medium title-font">Arcade</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                                Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-title lg:py-24 md:py-16 sm:py-8 py-4">
+        <div class="page_content">
+            <div class="w-full text-center">
+                <a href="#">
+                    <h1 class="font-bold inline-block text-white text-3xl"><span class="text-logo">App</span>Lab</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="flex space-x-5 flex-wrap justify-center md:py-12 sm:py-7 py-3">
+                    <li class="nav_link"><a href="./about.html">About</a></li>
+                    <li class="nav_link"><a href="./blog.html">Blog</a></li>
+                    <li class="nav_link"><a href="./service.html">Service</a></li>
+                    <li class="nav_link"><a href="./service.html">Contact</a></li>
+                    <li class="nav_link"><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <ul class="flex space-x-3 justify-center pb-14 text-gray-500 text-2xl">
+                    <li class="hover:text-white transition"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="hover:text-white transition"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="hover:text-white transition"><a href="#"><i class="fa-solid fa-hashtag"></i></a></li>
+                    <li class="hover:text-white transition"><a href="#"><i class="fa-brands fa-github-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-center text-gray-500 font-light">
+                <strong>
+                    Copyright© Arifur Rahman Tushar 2019. All rights reserved
+                </strong>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
