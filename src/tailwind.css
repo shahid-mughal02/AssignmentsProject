@@ -28,7 +28,7 @@ p{
     @apply 2xl:pt-24 xl:pt-16 md:pt-9 sm:pt-6 py-3 md:pb-8 sm:pb-4;
 }
 .responsive_navbar{
-    @apply md:flex md:space-x-5 md:text-center items-center md:w-auto w-64 md:relative fixed top-0 left-0 bottom-0 md:bg-transparent bg-btn-bg text-white;
+    @apply md:flex md:space-x-5 md:text-center items-center md:w-auto w-64 md:relative fixed top-0 left-0 bottom-0 md:bg-transparent bg-btn-bg text-white z-10;
 }
 .nav_link{
     @apply font-medium block md:p-0 px-4 py-2 md:hover:text-logo md:text-black text-white hover:bg-logo hover:text-btn-bg md:hover:bg-transparent transition;
