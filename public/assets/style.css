@@ -1571,6 +1571,7 @@ p{
   background-color: rgb(37 0 249 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  z-index: 10;
 }
 
 @media (min-width: 768px){
